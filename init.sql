@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS expenses (
     id SERIAL PRIMARY KEY,
-    user_id INTEGER NOT NULL,
+    user_id BIGINT NOT NULL,  -- ← BIGINT
     amount FLOAT NOT NULL,
     category VARCHAR(100) NOT NULL,
     description TEXT,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS expenses (
 
 CREATE TABLE IF NOT EXISTS income (
     id SERIAL PRIMARY KEY,
-    user_id INTEGER NOT NULL,
+    user_id BIGINT NOT NULL,  -- ← BIGINT
     amount FLOAT NOT NULL,
     source VARCHAR(100) NOT NULL,
     description TEXT,

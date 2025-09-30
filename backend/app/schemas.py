@@ -3,7 +3,7 @@ from datetime import date
 from typing import Optional
 
 class ExpenseBase(BaseModel):
-    user_id: int
+    user_id: int  # Pydantic int поддерживает большие числа
     amount: float
     category: str
     description: Optional[str] = None
@@ -19,7 +19,7 @@ class Expense(ExpenseBase):
         from_attributes = True
 
 class IncomeBase(BaseModel):
-    user_id: int
+    user_id: int  # Pydantic int поддерживает большие числа
     amount: float
     source: str
     description: Optional[str] = None

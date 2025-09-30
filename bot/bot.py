@@ -14,6 +14,7 @@ from keyboards import *
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+DASHBOARD_URL = os.getenv("DASHBOARD_URL", "http://78.85.36.187:8050")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 API_URL = os.getenv("API_URL", "http://backend:8000")
 
