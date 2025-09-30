@@ -87,10 +87,10 @@ docker-compose logs -f dashboard
 
 ## 🏗️ Архитектура
 
-┌─────────────┐ /
-│ Telegram Bot│ /
-│ (aiogram)   │ / 
-└──────┬──────┘ /
+┌─────────────┐ <br>
+│ Telegram Bot│ <br>
+│ (aiogram)   │ <br>
+└──────┬──────┘ <br>
 │
 ▼
 ┌─────────────┐ ┌──────────────┐
